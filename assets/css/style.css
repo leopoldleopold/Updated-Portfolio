@@ -1,0 +1,78 @@
+* {
+    z-index: 2;
+}
+.hello {
+    background-color: rgba(250, 238, 238, 0.008);
+    border-radius: 24px;
+    text-align: center;
+    font-size: 18px;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    /* margin-top: ÷px; */
+    line-height: 1em;
+    padding: 20px 50px 20px 50px;
+    color: rgb(1, 142, 1);
+    font-family: "Zig";
+    /* background-image: url("assets/images/profile.png"); */
+    /* background-position: top middle;  */
+    /* image */
+};
+.container {
+    margin:auto;
+    background-color: pink;
+    text-align: center;
+} 
+ #profileimg {
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+} 
+#profileimage {
+    margin:auto;
+    margin-top: 100px;
+    text-align: center;
+    opacity: 0.8;
+}
+.navbar {
+    margin:auto;
+}
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+    border-style: none;
+  
+}
+#alink {
+    background-color: rgba(250, 238, 238, 0.008);
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.012);
+    color: rgba(19, 174, 19, 0.557)
+}
+#clink {
+    background-color: rgba(250, 238, 238, 0.008);
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.012);
+    color: rgba(19, 174, 19, 0.557)
+}
+#plink {
+    background-color: rgba(250, 238, 238, 0.008);
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.012);
+    margin-right: 12px;
+    margin-left: 12px;
+    color: rgba(19, 174, 19, 0.557);
+    text-align: center;
+}
+.sbutton {
+    text-align: center;
+    margin-top: 34px;
+    z-index: 4;
+}
+#start {
+    background-color: rgba(174, 172, 172, 0.098);
+    border-style: none;
+    font-family: "Zig";
+    color: rgba(215, 212, 212, 0.619);
+    padding: 20px;   
+}
