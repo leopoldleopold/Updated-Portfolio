@@ -1,6 +1,10 @@
 * {
     z-index: 2;
 }
+@font-face {
+    font-family: "Arcade";
+    src: url("/assets/css/ARCADE_N.ttf");
+}
 .hello {
     background-color: rgba(250, 238, 238, 0.008);
     border-radius: 24px;
@@ -13,7 +17,7 @@
     line-height: 1em;
     padding: 20px 50px 20px 50px;
     color: rgb(1, 142, 1);
-    font-family: "Zig";
+    font-family: "Arcade";
     /* background-image: url("assets/images/profile.png"); */
     /* background-position: top middle;  */
     /* image */
@@ -75,4 +79,18 @@
     font-family: "Zig";
     color: rgba(215, 212, 212, 0.619);
     padding: 20px;   
+}
+.sndlyr{
+    margin:auto;
+    margin-top: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.776);
+    width: 20%;
+}
+#tim {
+    width: 140px;
+    height: 140px;
+    border-radius: 12px;
+    float: left;
 }
