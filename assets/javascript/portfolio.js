@@ -6,6 +6,7 @@ $(document).ready(function () {
     var myHub = false;
     var myLink = false;
     var resume = false;
+
     // start website 
     $("#start").on("click", function () {
         console.log("click");
@@ -56,17 +57,17 @@ $(document).ready(function () {
     function contact() {
         $(".snag").empty();
         var infoMe = "<h1>CONTACT</h1>"
-        + "<div class='contactchoice'>"
-        + "<br>"
-        + "<button id='myresume' type='submit' class='btn btn-primary btn-lg'>My Resume</button>"
-        + "<br>"
-        + "<button id='myhub' type='submit' class='btn btn-primary btn-lg'>My Github</button>"
-        + "<br>"
-        + "<button id='mylinked' type='submit'class='btn btn-primary btn-lg'>My LinkedIn</button>"
-        + "<br>"
-        + "<button id='email' type='submit' class='btn btn-primary btn-lg'>EMAIL ME..PLEASE</button>"
-        + "<br>"
-        + "</div>"
+            + "<div class='contactchoice'>"
+            + "<br>"
+            + "<button id='myresume' type='submit' class='btn btn-primary btn-lg'>My Resume</button>"
+            + "<br>"
+            + "<button id='myhub' type='submit' class='btn btn-primary btn-lg'>My Github</button>"
+            + "<br>"
+            + "<button id='mylinked' type='submit'class='btn btn-primary btn-lg'>My LinkedIn</button>"
+            + "<br>"
+            + "<button id='email' type='submit' class='btn btn-primary btn-lg'>EMAIL ME..PLEASE</button>"
+            + "<br>"
+            + "</div>"
         // console.log(myInfo);
         $(".snag").css({
             "margin": "auto",
@@ -75,9 +76,9 @@ $(document).ready(function () {
         }).append(infoMe).css({
             "line-height": "30px",
             "z-index": 5
-        }); 
+        });
         // user contact choice 
-        $("#email"). on("click", function() {
+        $("#email").on("click", function () {
             contactTrue = true;
             var email = "jleopoldacosta@gmail.com";
             var mailto_link = 'mailto:' + email
@@ -86,7 +87,7 @@ $(document).ready(function () {
                 contactTrue = false;
             }
         });
-        $("#myhub").on("click", function() { 
+        $("#myhub").on("click", function () {
             myHub = true;
             var hubLink = "https://github.com/leopoldleopold";
             if (myHub === true) {
@@ -94,13 +95,13 @@ $(document).ready(function () {
                 myHub = false;
             }
         });
-        $("#mylinked").on("click", function() {
+        $("#mylinked").on("click", function () {
             myLink = true;
             var linkedIn = "https://www.linkedin.com/in/justin-acosta-0b012414a/"
             if (myLink === true) {
                 window = window.open(linkedIn, 'newWindow');
                 myLink = false
-            } 
+            }
         });
         $("#myresume").on("click", function () {
             resume = true;
@@ -109,7 +110,7 @@ $(document).ready(function () {
                 window = window.open(myResume, 'newWindow');
                 resume = false;
             }
-        });      
+        });
     };
     // function for "portfolio" button
     $("#plink").on("click", function () {
@@ -118,7 +119,30 @@ $(document).ready(function () {
     // function for portfolio
     function portfolio() {
         $(".snag").empty();
-        $(".snag").append("<div id='photos'><img id='tim' src='assets/images/tim.png'>"
-            + "</div>");
+        $(".snag").append("<div class='personalwork'>"
+            + "<div id='lirinode'>"
+            + "<div id='liriphoto'>"
+            +   "<h2>LIRI JS</h2>"
+            + "<a href='https://github.com/leopoldleopold/liri-node-app'>"
+            + "<img id='liri' src='assets/images/liri.png'>"
+            + "</a>"
+            +   "<p>Built a "
+            + "</div>"
+            + "<div id='timfish'>"
+            + "<a href='https://leopoldleopold.github.io/Pyschic-Game/'>"
+            + "<img id='tim' src='assets/images/tim.png'>"
+            + "</a>"
+            + "</div>"
+            + "<div id='kicking'>"
+            + "<a href='https://leopoldleopold.github.io/Group_Project-1/'>"
+            + "<img id='kitchen' src='assets/images/kitchen.png'>"
+            + "</a>"
+            + "</div>"
+        )
     };
 });
+
+
+
+
+
