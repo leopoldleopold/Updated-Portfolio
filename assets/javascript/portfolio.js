@@ -57,6 +57,7 @@ $(document).ready(function () {
     function contact() {
         $(".snag").empty();
         var infoMe = "<h1>CONTACT</h1>"
+        + "<div class='contactchoice'>"
         + "<br>"
         + "<button id='myresume' type='submit' class='btn btn-primary btn-lg'>My Resume</button>"
         + "<br>"
@@ -66,54 +67,55 @@ $(document).ready(function () {
         + "<br>"
         + "<button id='email' type='submit' class='btn btn-primary btn-lg'>EMAIL ME..PLEASE</button>"
         + "<br>"
+        + "</div>"
         // console.log(myInfo);
         $(".snag").css({
             "margin": "auto",
             "margin-top": "56px",
             "height": "600px"
         }).append(infoMe).css({
-            "line-height": "30px"
+            "line-height": "30px",
+            "z-index": 5
         }); 
+        // user contact choice 
+        $("#email"). on("click", function() {
+            contactTrue = true;
+            var email = "jleopoldacosta@gmail.com";
+            var mailto_link = 'mailto:' + email
+            if (contactTrue === true) {
+                window = window.open(mailto_link, 'emailWindow');
+                contactTrue = false;
+            }
+        });
+        $("#myhub").on("click", function() { 
+            myHub = true;
+            var hubLink = "https://github.com/leopoldleopold";
+            if (myHub === true) {
+                window = window.open(hubLink, 'newWindow');
+                myHub = false;
+            }
+        });
+        $("#mylinked").on("click", function() {
+            myLink = true;
+            var linkedIn = "https://www.linkedin.com/in/justin-acosta-0b012414a/"
+            if (myLink === true) {
+                window = window.open(linkedIn, 'newWindow');
+                myLink = false
+            } 
+        });
+        $("#myresume").on("click", function () {
+            resume = true;
+            var myResume = "assets/images/resume.pdf";
+            if (resume === true) {
+                window = window.open(myResume, 'newWindow');
+                resume = false;
+            }
+        });
+        // $(".contactchoice").on("click", function() {
+        //     console.log("BOO");
+        //     contactMe();
+        // });       
     };
-    // function to contact "me"
-    function contactMe() {
-        switch (contactChoice) {
-            case "#email":
-                contactTrue = true;
-                var email = "jleopoldacosta@gmail.com";
-                var mailto_link = 'mailto:' + email
-                if (contactTrue === true) {
-                    window = window.open(mailto_link, 'emailWindow');
-                    contactTrue = false;
-                }
-                // window.close();
-                break;
-            case "#myhub":
-                myHub = true;
-                var hubLink = "https://github.com/leopoldleopold";
-                if (myHub === true) {
-                    window = window.open(hubLink, 'newWindow');
-                    myHub = false;
-                }
-                break;
-            case "#mylinked":
-                myLink = true;
-                var linkedIn = "https://www.linkedin.com/in/justin-acosta-0b012414a/"
-                if (myLink === true) {
-                    window = window.open(linkedIn, 'newWindow');
-                    myLink = false
-                }
-                break;
-            case "#myresume":
-                resume = true;
-                var myResume = "assets/images/resume.pdf";
-                if (resume === true) {
-                    window = window.open(myResume, 'newWindow');
-                    resume = false;
-                }
-                break;
-        };
-    }
     // function for "portfolio" button
     $("#plink").on("click", function () {
         portfolio();
