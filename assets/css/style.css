@@ -94,3 +94,19 @@
     border-radius: 12px;
     float: left;
 }
+#myresume{
+    margin-bottom: 20px;
+    font-family: "Zig";
+}
+#myhub {
+    margin-bottom: 20px;
+    font-family: "Zig";
+}
+#mylinked {
+    margin-bottom: 20px;
+    font-family: "Zig";
+}
+#email {
+    margin-bottom: 20px;
+    font-family: "Zig";  
+}
