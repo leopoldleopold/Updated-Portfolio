@@ -6,7 +6,6 @@ $(document).ready(function () {
     var myHub = false;
     var myLink = false;
     var resume = false;
-
     // start website 
     $("#start").on("click", function () {
         console.log("click");
@@ -110,11 +109,7 @@ $(document).ready(function () {
                 window = window.open(myResume, 'newWindow');
                 resume = false;
             }
-        });
-        // $(".contactchoice").on("click", function() {
-        //     console.log("BOO");
-        //     contactMe();
-        // });       
+        });      
     };
     // function for "portfolio" button
     $("#plink").on("click", function () {
