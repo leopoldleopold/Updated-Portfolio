@@ -122,3 +122,13 @@
     background-color: rgba(0, 125, 167, 0.523);
     border-radius: 24px;
 }
+#liri {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+.lirinode p {
+    color: white;
+    font-size: 14px;
+    float: right;
+}
