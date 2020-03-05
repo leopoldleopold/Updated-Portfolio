@@ -5,6 +5,9 @@
     font-family: "Arcade";
     src: url("/assets/css/ARCADE_N.ttf");
 }
+body {
+    background: linear-gradient(to bottom, #202020, #111119);
+}
 .hello {
     background-color: rgba(250, 238, 238, 0.008);
     border-radius: 24px;
@@ -122,13 +125,61 @@
     background-color: rgba(0, 125, 167, 0.523);
     border-radius: 24px;
 }
+.personalwork {
+    margin: auto;
+    height: 400px;
+    width: 400px; 
+    margin-right: 150px;  
+    z-index: 5;
+}
 #liri {
     float: left;
     width: 100px;
     height: 100px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+.lirinode h2 {
+    text-align: center;
+    margin: auto;
+    margin-right: 66px;
+    padding-bottom: 10px;
+    font-size: 28px;
+    color: rgba(28, 116, 28, 0.79);
 }
 .lirinode p {
     color: white;
     font-size: 14px;
     float: right;
+    width: 280px;
+    margin-right: 18px;
 }
+#description {
+    float: clear;
+}
+.kicking {
+    margin-top: 80px;
+}
+
+#kitchen {
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 12px;
+}
+.kicking h2{
+    text-align: center;
+    margin: auto;
+    margin-right: 55px;
+    padding-bottom: 10px;
+    /* font-size: 28px; */
+    color: rgba(28, 116, 28, 0.79);
+}
+.kicking p {
+    color: white;
+    font-size: 14px;
+    float: right;
+    width: 280px;
+    margin-right: 18px;
+}
+
